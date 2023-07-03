@@ -11,13 +11,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         List<VirtualPlayer> VPlayers = new ArrayList<>();
-        VirtualPlayer Vplayer1 = new VirtualPlayer("Vplayer1", "Oke, I'm lost");
+        VirtualPlayer Vplayer1 = new VirtualPlayer("Virtual player 1", "Oke, I'm lost");
         VPlayers.add(Vplayer1);
-        VirtualPlayer Vplayer2 = new VirtualPlayer("Vplayer2", "Nah, I'm lost");
+        VirtualPlayer Vplayer2 = new VirtualPlayer("Virtual player 2", "Nah, I'm lost");
         VPlayers.add(Vplayer2);
-        VirtualPlayer Vplayer3 = new VirtualPlayer("Vplayer3", "Yep, I'm lost");
+        VirtualPlayer Vplayer3 = new VirtualPlayer("Virtual player 3", "Oh no, I'm lost");
         VPlayers.add(Vplayer3);
-        VirtualPlayer Vplayer4 = new VirtualPlayer("Vplayer4", "No way, I'm lost");
+        VirtualPlayer Vplayer4 = new VirtualPlayer("Virtual player 4", "No way, I'm lost");
         VPlayers.add(Vplayer4);
 
         List<Dice> dices = new ArrayList<>();
@@ -31,8 +31,8 @@ public class Main {
         int numPlayers = in.nextInt();
         for (int i = 1; i <= numPlayers; ++ i) {
             System.out.println("Please input the name of number " + i + " player: ");
-            in.nextLine();
-            String name = in.nextLine();
+            ///in.nextLine();
+            String name = in.next();
             Player tmpPlayer = new Player(name);
             players.add(tmpPlayer);
         }
